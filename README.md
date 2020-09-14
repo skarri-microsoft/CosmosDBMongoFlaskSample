@@ -11,4 +11,4 @@ This is a minimal sample app that demonstrates how to run a Python Cosmos DB Mon
 az login
 az account set --subscription subid
 az webapp up --sku F1 -n yourwebappname -l westus2
-```sh
+```
