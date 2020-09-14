@@ -7,6 +7,8 @@ This is a minimal sample app that demonstrates how to run a Python Cosmos DB Mon
 * Clone this repo and Cd into the directory "CosmosDBMongoFlaskSample"
 * update line no:9 and 11 in application.py with Cosmos DB Mongo API Credentials and save it.
 * Run the following az commands:
+```sh
 az login
 az account set --subscription subid
-az webapp up --sku F1 -n yourwebappname
+az webapp up --sku F1 -n yourwebappname -l westus2
+```sh
