@@ -6,9 +6,9 @@ app = Flask(__name__)
 app = Flask(__name__)
 title = "TODO with Flask"
 heading = "ToDo Reminder"
-client = MongoClient("mongodb://uri")
+client = MongoClient(os.getenv("MONGOURL"))
 db = client.test
-db.authenticate(name="username",password='password')
+db.authenticate(name=os.getenv("MONGO_USERNAME"),password=os.getenv("MONGO_PASSWORD"))
 todos = db.todo
 
 def redirect_url():
